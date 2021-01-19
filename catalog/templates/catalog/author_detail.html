@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Author: {{ author.first_name }},{{author.last_name}}</h1>
+
+  <p>{{ author.date_of_birth}}</p>
+  <p><strong>Books</strong></p>
+
+     {% for book in book %}
+        <ul>
+            {% if book.author.first_name == author.first_name %}
+                    <p><a href=" ">{{book.title}}({{book.id}})</a></p>
+                    <p>{{book.summary}}</p>
+            {% endif%}
+        </ul>
+
+
+    {% endfor %}
+
+
+{% endblock %}
