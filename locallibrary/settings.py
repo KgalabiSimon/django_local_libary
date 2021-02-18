@@ -28,10 +28,11 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'r6a+=78@b7h+11sgjvn(_76)qfxm*u
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+#DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = [
   'ancient-dawn-80211.herokuapp.com',
+
 ]
 
 
