@@ -16,6 +16,7 @@ from django.urls import reverse_lazy
 
 
 
+@login_required
 def index(request):
     """View function for home page of site."""
 
